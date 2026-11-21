@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "💬 Questions and discussions · Pytania i rozmowy"
+    url: https://github.com/kamdevapp/nati/discussions
+    about: "Ask, share ideas, vote in polls · Zapytaj, podziel się pomysłem, zagłosuj w ankietach"
+  - name: "🌍 Translations · Tłumaczenia"
+    url: https://github.com/kamdevapp/nati-translations
+    about: "Add or fix a language with a Pull Request · Dodaj albo popraw język przez Pull Request"

@@ -1,0 +1,66 @@
+name: "🐞 Bug / Błąd"
+description: "Something doesn't work as it should · Coś nie działa tak, jak powinno"
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! You can write in English or Polish. · Dzięki za zgłoszenie! Możesz pisać po polsku albo po angielsku.
+  - type: textarea
+    id: what
+    attributes:
+      label: "What happened? · Co się stało?"
+      description: "What did you do and what went wrong? · Co robiłeś/aś i co poszło nie tak?"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: "How to make it happen again · Jak to powtórzyć"
+      placeholder: |
+        1. Open… / Otwórz…
+        2. Click… / Kliknij…
+        3. …
+  - type: textarea
+    id: expected
+    attributes:
+      label: "What did you expect? · Czego się spodziewałeś/aś?"
+  - type: input
+    id: version
+    attributes:
+      label: "Nati version · Wersja Nati"
+      description: "Settings → About Nati · Ustawienia → O Nati"
+      placeholder: "0.21.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: device
+    attributes:
+      label: "Device · Urządzenie"
+      options:
+        - "Linux – AppImage"
+        - "Linux – other · inne"
+        - "TV mode · Tryb TV"
+        - "Other · Inne"
+    validations:
+      required: true
+  - type: dropdown
+    id: cloud
+    attributes:
+      label: "Your Nati Cloud · Twoja chmura Nati"
+      options:
+        - "Cloud on this computer · Chmura na tym komputerze"
+        - "Home server (Docker installer) · Serwer domowy (instalator Docker)"
+        - "NAS (Synology, QNAP, Unraid…)"
+        - "From source · Z kodu źródłowego"
+        - "I don't know · Nie wiem"
+  - type: input
+    id: system
+    attributes:
+      label: "System"
+      placeholder: "Ubuntu 24.04, Fedora 45, Linux Mint 22…"
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Screenshots or logs · Zrzuty ekranu albo logi"
+      description: "Drag images here. Cloud log: `/srv/nati/install.sh --logs` · Przeciągnij tu obrazki. Log chmury: `/srv/nati/install.sh --logs`"

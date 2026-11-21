@@ -1,0 +1,35 @@
+name: "💡 Idea / Pomysł"
+description: "A new feature or an improvement · Nowa funkcja albo ulepszenie"
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Every idea is read and considered when planning new versions. · Każdy pomysł jest czytany i brany pod uwagę przy planowaniu nowych wersji.
+        Want to discuss it first or vote on others? Try [Discussions](https://github.com/kamdevapp/nati/discussions). · Chcesz najpierw pogadać albo zagłosować na inne? Zajrzyj do [Discussions](https://github.com/kamdevapp/nati/discussions).
+  - type: textarea
+    id: idea
+    attributes:
+      label: "Your idea · Twój pomysł"
+      description: "What should Nati do? · Co Nati powinno robić?"
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: "Why would it help? · Dlaczego to się przyda?"
+      description: "What do you want to achieve? · Co chcesz dzięki temu osiągnąć?"
+  - type: dropdown
+    id: area
+    attributes:
+      label: "Part of Nati · Część Nati"
+      multiple: true
+      options:
+        - "Player and library · Odtwarzacz i biblioteka"
+        - "Cloud / server · Chmura / serwer"
+        - "Family and accounts · Rodzina i konta"
+        - "TV mode · Tryb TV"
+        - "Phone · Telefon"
+        - "Music from the internet · Muzyka z internetu"
+        - "Look and sound · Wygląd i dźwięk"
+        - "Other · Inne"
